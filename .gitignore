@@ -38,3 +38,6 @@ stress.sh
 
 #Sentry
 sentry.properties
+
+#ide
+.idea
