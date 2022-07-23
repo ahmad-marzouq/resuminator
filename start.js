@@ -1,5 +1,5 @@
 const { execSync } = require("child_process");
-const port = 4201;
+const port = process.env.PORT || 4201;
 const build = process.env.BUILD === "true";
 
 if (build) {
