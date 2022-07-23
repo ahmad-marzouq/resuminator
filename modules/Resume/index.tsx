@@ -161,7 +161,7 @@ const ResumePaper = () => {
             </BodyBox>
           </DragDropContext>
         </Box>
-        <ResumeFooter color={primaryColor} />
+        {/*<ResumeFooter color={primaryColor} />*/}
       </Paper>
     </StylePropsProvider>
   );

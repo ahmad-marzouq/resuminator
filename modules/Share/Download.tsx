@@ -37,7 +37,8 @@ const DownloadResume: React.FC<DownloadResumeProps> = ({ id }) => {
   const { fullName } = useContactStore();
   const { createToast } = useCustomToast();
   const token = Cookies.get("token");
-  const RESUME_NAME = `${fullName} Resume.pdf`;
+  const  date  = Date.now();
+  const RESUME_NAME = `${fullName} Resume ${date}.pdf`;
 
   const download = () =>
     handleDownload(token, id, RESUME_NAME, setStatus, createToast);
